@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Figtree", serif;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    background-color: var(--yellow);
+    overflow-x: hidden;
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-color: #6b6b6b;
+    --black-color: #111;
+
+    --text-presets-1: 2.4rem;
+    --text-presets-2: 1.6rem;
+    --text-presets-3: 1.4rem;
+}
+
+a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.4rem;
+    max-width: 40rem;
+    height: auto;
+    padding: 2.4rem;
+    border-radius: 2rem;
+    background-color: var(--white);
+    border: 1px solid var(--black-color);
+    margin-top: 3rem;
+    color: var(--black-color);
+    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.card__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.card__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.card__tag {
+    width: max-content;
+    border-radius: 0.4rem;
+    background-color: var(--yellow);
+    padding: 0.4rem 1.2rem;
+    font-size: var(--text-presets-3);
+    font-weight: 800;
+}
+
+.card__date {
+    font-size: var(--text-presets-3);
+    line-height: 150%;
+    font-weight: 600;
+}
+
+.card__title {
+    font-size: var(--text-presets-1);
+    font-weight: 900;
+}
+
+.card__title:hover {
+    color: var(--yellow);
+}
+
+.card__description {
+    font-size: var(--text-presets-2);
+    font-weight: 500;
+    color: var(--gray-color);
+}
+
+.card__author-container {
+    width: max-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: var(--text-presets-3);
+    font-weight: 800;
+}
+
+.card__author-image {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+}
+
+.footer a {
+    font-weight: bolder;
+}
